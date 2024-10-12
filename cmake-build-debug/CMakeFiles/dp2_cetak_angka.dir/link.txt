@@ -1,0 +1,3 @@
+C:\Users\LOQ\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\dp2_cetak_angka.dir/objects.a
+C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\dp2_cetak_angka.dir/objects.a @CMakeFiles\dp2_cetak_angka.dir\objects1.rsp
+C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\dp2_cetak_angka.dir/objects.a -Wl,--no-whole-archive -o dp2_cetak_angka.exe -Wl,--out-implib,libdp2_cetak_angka.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dp2_cetak_angka.dir\linkLibs.rsp

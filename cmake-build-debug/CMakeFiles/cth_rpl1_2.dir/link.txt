@@ -1,0 +1,3 @@
+C:\Users\LOQ\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\cth_rpl1_2.dir/objects.a
+C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\cth_rpl1_2.dir/objects.a @CMakeFiles\cth_rpl1_2.dir\objects1.rsp
+C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\cth_rpl1_2.dir/objects.a -Wl,--no-whole-archive -o cth_rpl1_2.exe -Wl,--out-implib,libcth_rpl1_2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cth_rpl1_2.dir\linkLibs.rsp

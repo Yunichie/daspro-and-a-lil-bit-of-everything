@@ -1,0 +1,3 @@
+C:\Users\LOQ\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\dp4_hitung_huruf.dir/objects.a
+C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\dp4_hitung_huruf.dir/objects.a @CMakeFiles\dp4_hitung_huruf.dir\objects1.rsp
+C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\dp4_hitung_huruf.dir/objects.a -Wl,--no-whole-archive -o dp4_hitung_huruf.exe -Wl,--out-implib,libdp4_hitung_huruf.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dp4_hitung_huruf.dir\linkLibs.rsp
