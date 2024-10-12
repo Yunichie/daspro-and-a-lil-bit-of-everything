@@ -1,3 +1,0 @@
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\dp3_palindrome.dir/objects.a
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\dp3_palindrome.dir/objects.a @CMakeFiles\dp3_palindrome.dir\objects1.rsp
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\dp3_palindrome.dir/objects.a -Wl,--no-whole-archive -o dp3_palindrome.exe -Wl,--out-implib,libdp3_palindrome.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dp3_palindrome.dir\linkLibs.rsp

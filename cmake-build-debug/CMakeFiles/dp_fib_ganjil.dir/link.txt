@@ -1,3 +1,0 @@
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\dp_fib_ganjil.dir/objects.a
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\dp_fib_ganjil.dir/objects.a @CMakeFiles\dp_fib_ganjil.dir\objects1.rsp
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\dp_fib_ganjil.dir/objects.a -Wl,--no-whole-archive -o dp_fib_ganjil.exe -Wl,--out-implib,libdp_fib_ganjil.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dp_fib_ganjil.dir\linkLibs.rsp

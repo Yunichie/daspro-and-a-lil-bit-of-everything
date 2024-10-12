@@ -1,3 +1,0 @@
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\dp_bitwise_and.dir/objects.a
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\dp_bitwise_and.dir/objects.a @CMakeFiles\dp_bitwise_and.dir\objects1.rsp
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\dp_bitwise_and.dir/objects.a -Wl,--no-whole-archive -o dp_bitwise_and.exe -Wl,--out-implib,libdp_bitwise_and.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\dp_bitwise_and.dir\linkLibs.rsp

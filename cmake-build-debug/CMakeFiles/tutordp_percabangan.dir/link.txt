@@ -1,3 +1,0 @@
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f CMakeFiles\tutordp_percabangan.dir/objects.a
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\ar.exe qc CMakeFiles\tutordp_percabangan.dir/objects.a @CMakeFiles\tutordp_percabangan.dir\objects1.rsp
-C:\Users\LOQ\AppData\Local\Programs\CLion\bin\mingw\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\tutordp_percabangan.dir/objects.a -Wl,--no-whole-archive -o tutordp_percabangan.exe -Wl,--out-implib,libtutordp_percabangan.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\tutordp_percabangan.dir\linkLibs.rsp
