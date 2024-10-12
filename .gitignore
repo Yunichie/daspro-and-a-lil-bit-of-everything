@@ -1,0 +1,9 @@
+/contoh
+/build
+/.cache
+/cybsec
+/.idea
+/cmake-build-debug
+CMakeLists.txt
+.autocp
+.gitignore
