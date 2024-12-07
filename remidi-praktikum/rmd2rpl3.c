@@ -1,40 +1,49 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
-    int t;
-    scanf("%d", &t);
+    int T;
 
-    for (int i = 0; i < t; i++) {
-        int n, e;
-        scanf("%d", &n);
+    scanf("%d", &T);
 
-        int slime[n], counter = n;
-        for (int j = 0; j < n; j++) {
-            scanf("%d", &slime[j]);
+    for (int i = 0; i < T; i++){
+        int N, E;
+        scanf("%d", &N);
+
+        int nSlime[N], counter = N;
+        for (int j = 0; j < N; j++){
+            scanf("%d", &nSlime[j]);
         }
 
-        scanf("%d", &e);
+        scanf("%d", &E);
 
-        int min = slime[0], idxmin = 0;
-        for (int j = 0; j < e; j++) {
-            for (int k = 1; k < n; k++) {
-                if (slime[j] < min) {
-                    min = slime[i];
-                    idxmin = k;
-                }
-                if (e >= min && slime[i] != -1) {
-                    e -= min;
-                    slime[idxmin] = -1;
-                    counter--;
-                } else if (e < min) {
-                    break;
+        for(int j = 0; j < N; j++){
+
+            int min = 501, idxMin = -1;
+
+            for(int i = 0; i < N; i++){
+                if(min > nSlime[i] && nSlime[i] != -1){
+                    min = nSlime[i];
+                    idxMin = i;
                 }
             }
+            if (E >= min && nSlime[idxMin] != -1){
+                E -= min;
+                nSlime[idxMin] = -1;
+                counter--;
+            }
+            else if (counter == 0){
+                break;
+            }
+
         }
 
-        if (counter > 0) {
-            printf("Kaburlah Furina! akan kuhadapi %d Slime terakhir dengan cara lain!", )
+        if(counter <= 0){
+            printf("Cih, %d slime doang gaakan bisa ngapa ngapain gweh!\n", N);
+        }
+        else if(counter > 0){
+            printf("Kaburlah Furina! akan kuhadapi %d Slime terakhir dengan cara lain!\n", counter);
         }
     }
+
+    return 0;
 }
