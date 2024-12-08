@@ -6,21 +6,15 @@ int main() {
     char word[101];
     scanf("%d\n%s", &t, word);
 
-    char grid[t*t][t];
-    memset(grid, ' ', sizeof(grid));
-    int idx = 0;
-    for (int i = 0; i < t*t; i++) {
-        for (int j = 0; j < t; j += t) {
-            grid[i][j] = word[idx];
-            idx++;
+    int len = strlen(word), idx = 0;
+    char decrypt[101] = {0};
+    for (int i = 0; i < t; i++) {
+        int skip = i;
+        while (skip < len) {
+            decrypt[skip] = word[idx++];
+            skip += t;
         }
     }
-
-    int i = 0, j = 0;
-    for (i; i < t*t; i++) {
-        for (j = 0; j < t; j++) {
-            printf("%c", grid[i][j]);
-        }
-        i += t;
-    }
+    for (int i = 0; i < len; i++) if (decrypt[i] == '_')decrypt[i] = ' ';
+    printf("%s", decrypt);
 }

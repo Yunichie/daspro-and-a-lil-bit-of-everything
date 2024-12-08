@@ -2,30 +2,18 @@
 #include <stdlib.h>
 
 int main() {
-    long long n, k;
+    long long n, k, count = 0, i = 0;;
     scanf("%lld %lld", &n, &k);
 
-    long long sum = 0;
-    long long seen = 0;
-
-    // Calculate cycle length using GCD
-    long long a = n, b = k;
-    while (b) {
-        long long temp = b;
-        b = a % b;
-        a = temp;
+    int* arr = calloc(n, sizeof(int));
+    while (1) {
+        long long no_tempat = 1 + i * k, harga = no_tempat % n;
+        if (arr[harga]) break;
+        arr[harga] = 1;
+        count += harga;
+        i++;
     }
-    long long gcd = a;
-
-    // Number of unique values is n/gcd
-    long long cycle = n/gcd;
-
-    // Calculate sum of first cycle numbers
-    for (long long i = 0; i < cycle; i++) {
-        long long place = 1 + i * k;
-        sum += place % n;
-    }
-
-    printf("%lld\n", sum);
+    printf("%lld\n", count);
+    free(arr);
     return 0;
 }
